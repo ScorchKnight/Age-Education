@@ -14,19 +14,18 @@ def welcome():
     print("Restart the code and try again")
 welcome()
 
-
-
-def ageEd():
-  age = int(input("Enter your age:"))
-  if age > 35:
-    print("The year is 2018. You are in your juinor year of High School, and live a pretty average lifestyle, have an active social life and ")
-
-
-
-
-  else: 
-    print()
+young = False
+old = False
+ans_yes = ["Yes", "Y", "yes", "y"]
+ans_no = ["No", "N", "no", "n"]
+age = int(input("Enter your age:"))
+if age > 35:
+  old = True
+else: 
+  print()
+young = True
   
-  
-
-ageEd()
+while old is True:
+ resp1 = input("The year is 2018. You are in your juinor year of High School, and live a pretty average lifestyle with an active social life.\n5:30\nYou wake up contemplating your life. What\'s the use of school again? you try to think of what\'s more important: high school, or your sanity. Will you actually get out of bed and prepare yourself for school?? (Yes/No)\n: ")
+  if resp1 in ans_yes:
+    print("You go through your morning routine and set up your music and get out the house to get to school. Your music clears your mind and allows you to focus on both it and the task at hand, travel.You arrive to school on time.\n You cruise through classes checking your phone a few times until gym rolls around. Most of your peers are on there phones except some playing sports and others working out")
